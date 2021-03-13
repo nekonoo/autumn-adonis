@@ -86,33 +86,35 @@ h2 {
 }
 
 .text1 {
-	position: relative;
+	position: absolute;
 	color: white;
 	font-size: 2vw;
-	top: -4%;
-	text-align: center;
+	top: 20%%;
+	left: 50%;
+    transform: translateX(-50%);
 	z-index: 2;
 }
 
 .text1:hover:after {
+	text-align: center;
 	content:"I don't know";
 	z-index: 2;
 }
 
 .text2 {
-	position: relative;
+	position: absolute;
 	color: rgba(33,43,57);
 	font-size:2vw;
-	top: 12.5%;
+	top: 300%;
 	margin-left:11% ;
 	z-index: 2;
 }
 
 .text3 {
-	position: relative;
+	position: absolute;
 	color: rgba(33,43,57);
 	font-size:2vw;
-	top: 9.5%;
+	top: 300%;
 	margin-left:65% ;
 	z-index: 2;
 }
@@ -149,11 +151,6 @@ h2 {
 	text-align: center;
 	margin-left: 27.5%;
 	z-index: 2;
-}
-.lastpic {
-	position: absolute;
-	z-index: 0;
-	top: 490%;
 }
 
 .nextpage {
