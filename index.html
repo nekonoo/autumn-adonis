@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>
+Can you guess who am I?
+</title>
+<style>
+html, body {
+  height: 100%;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+*{
+  box-sizing:border-box;
+}  
+
+.parallax  {
+  background-image: url("bgnew.png");
+  height: 120%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+h1 {
+  position: absolute;
+  bottom: 60px;	
+  color: white;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2vw; 
+  text-shadow: 0 0 10px white;
+  animation: fadeInAnimation ease 15s; 
+  animation-iteration-count: 1; 
+  animation-fill-mode: forwards; 
+ } 
+  @keyframes fadeInAnimation { 
+    0% { 
+    opacity: 0; 
+    } 
+    100% { 
+    opacity: 1; 	
+}
+  }
+  
+h2 {
+  position: relative;
+  margin-top:0;
+  color: white;
+  margin-left:56%;
+  top:36%;
+  font-size: 2vw;
+}
+
+#statement {
+  position: absolute;
+  color:white;
+  font-size:1.3vw;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+ 
+#mainpart {
+  position: relative;
+  background-image: url("bg2.png");
+  height: 100%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+button {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    height:  38px;
+    line-height:  40px;
+    border:  2px solid white;
+	  border-radious:6px;
+    display:  inline-block;
+    float:  none;
+    text-align:  center;
+    width:  200px;
+    padding:  0px;
+    font-size:  15px;
+    color:  #fff;
+ }
+
+button:hover  {
+    color:  #fff;
+    background:  rgba(33,43,57);
+ }
+ 
+.scroll {
+  position: absolute;
+  top:49%;
+  left: 63%;
+  animation: fadeInAnimation ease 4s; 
+  animation-iteration-count: 1; 
+  animation-fill-mode: forwards; 
+ } 
+  @keyframes fadeInAnimation { 
+    0% { 
+    opacity: 0; 
+    } 
+    100% { 
+    opacity: 1; 	
+}
+
+table {
+  display: block;
+  align:center;
+}
+
+th {
+  margin-right:0; 
+ }
+ 
+	
+</style>
+</head>
+	
+
+<body>
+<div class="parallax">
+<h2>"This old garage used to be my room"</h2>
+<div class="scroll"><a href="#mainpart"><button>I found something...</button></a></div>
+</div>
+<div id="mainpart">
+<table style="width:100%">
+<tr>
+<th align="right"><a href="page2.html"><img src="polaroid3.png" alt="page2" width="30%"></a></th>
+<td><a href="page4.html"><img src="polaroid1.png" alt="page3" width="30%"></a></td>
+</tr>
+<tr>
+<th align="right"><a href="page5.html"><img src="polaroid2.png" alt="page4" width="30%"></a></th>
+<td><a href="page6.html"><img src="polaroid4.png" alt="page5" width="30%"></td>
+</tr>
+</table>
+<br><br><br><br>
+<h1>"...these are old photos of me, my life, my beloved ones. It was a long time ago..."</h1>
+<br>
+<a href="statement.html"  target="_blank"><div id="statement"><p>What's behind all this?</p></div></a>
+
+</div>
+
+
+
+
+
+
+</body>
+</html>
